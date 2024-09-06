@@ -1,1 +1,5 @@
 h1 { font-family: Arial ; font-size: 25pt; color: rgb(1, 52, 255) }
+
+#tab1{background-color: rgb(185, 185, 185); border-spacing: 10px;border-radius: 5%;}
+
+#tab2{background-color: rgb(185, 185, 185)}
