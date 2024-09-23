@@ -36,9 +36,9 @@ h1 {
     font-size: 0.9em;
 }
 
-    .contact-info p {
-        margin: 0;
-    }
+.contact-info p {
+    margin: 0;
+}
 
 .profile-pic {
     width: 100px;
@@ -54,38 +54,60 @@ h1 {
     overflow: hidden;
 }
 
-    .section h2 {
-        background-color: #4dd0e1;
-        color: white;
-        padding: 10px;
-        margin: 0;
-    }
+.section h2 {
+    background-color: #2f5055;
+    color: white;
+    padding: 10px;
+    margin: 0;
+}
 
 .grid {
     display: grid;
     grid-template-columns: 1fr 2fr;
 }
 
-    .grid div {
-        padding: 10px;
-    }
-
-ul li::before {
-    content: "•";
-    color: #00838f;
-    font-weight: bold;
-    display: inline-block;
-    width: 1em;
-    margin-left: -1em;
-    position: absolute;
-    left: 5px;
+.grid div {
+    padding: 10px;
 }
+
+.grid div:nth-child(4n+1),
+.grid div:nth-child(4n+2) {
+    background-color: #e0f7fa;
+}
+
+.grid div:nth-child(4n+3),
+.grid div:nth-child(4n+4) {
+    background-color: #b2ebf2;
+}
+
+.grid div:nth-child(odd) {
+    font-weight: bold;
+    color: #00838f;
+}
+
+ul {
+    padding-left: 20px;
+    list-style-type: none;
+    color: #00838f;
+}
+
+ul li {
+    margin-bottom: 5px;
+    background-color: #e0f7fa;
+    padding: 5px;
+    position: relative;
+}
+
+ul li:nth-child(even) {
+    background-color: #b2ebf2;
+}
+
 
 a {
     color: #00838f;
     text-decoration: none;
 }
 
-    a:hover {
-        text-decoration: underline;
-    }
+a:hover {
+    text-decoration: underline;
+}
