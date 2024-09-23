@@ -1,8 +1,91 @@
-h1 { font-family: Arial ; font-size: 25pt; color: rgb(1, 52, 255) }
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+    background-color: #e0f7fa;
+}
 
-#tab1{background-color: rgb(185, 185, 185); border-spacing: 10px;border-radius: 5%;}
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
 
-#tab2{background-color: rgb(185, 185, 185)}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #b2ebf2;
+    padding: 20px;
+    margin-bottom: 20px;
+}
 
+.personal-info {
+    flex: 1;
+}
 
-  
+h1 {
+    color: #00838f;
+    margin: 0 0 10px 0;
+}
+
+.contact-info {
+    font-size: 0.9em;
+}
+
+    .contact-info p {
+        margin: 0;
+    }
+
+.profile-pic {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.section {
+    margin-bottom: 20px;
+    border: 2px solid #4dd0e1;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+    .section h2 {
+        background-color: #4dd0e1;
+        color: white;
+        padding: 10px;
+        margin: 0;
+    }
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+    .grid div {
+        padding: 10px;
+    }
+
+ul li::before {
+    content: "•";
+    color: #00838f;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+    position: absolute;
+    left: 5px;
+}
+
+a {
+    color: #00838f;
+    text-decoration: none;
+}
+
+    a:hover {
+        text-decoration: underline;
+    }
